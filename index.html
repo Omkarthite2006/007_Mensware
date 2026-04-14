@@ -8,386 +8,120 @@
     content="007 Menswear – Premium men's clothing store in Karad. Explore shirts, pants, shoes, watches, and more from top brands including U.S. Polo." />
   <title>007 Menswear – U.S. POLO.</title>
 
-  <!-- Google Fonts: Cormorant Garamond (luxury serif) + DM Sans (modern body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans&family=Cinzel&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="scroll-progress"></div>
-  <div class="cursor-dot" id="cursor-dot"></div>
-  <div class="cursor-outline" id="cursor-outline"></div>
 
-  <!-- ============================================================
-       NAVIGATION BAR
-  ============================================================ -->
-  <header class="navbar" id="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
     <div class="nav-container">
 
-      <!-- Logo -->
-      <a href="#home" class="nav-logo" id="nav-logo">
-        <span class="logo-text">FC</span>
-        <span class="logo-full">Fashion Club</span>
+      <!-- UPDATED LOGO -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">007</span>
+        <span class="logo-full">007 Menswear</span>
       </a>
 
-      <!-- Hamburger (mobile) -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <!-- Menu Links -->
-      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+      <nav class="nav-menu">
         <ul class="nav-list">
-          <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
-          <li><a href="#products" class="nav-link" id="link-products">Products</a></li>
-          <li><a href="#offers" class="nav-link" id="link-offers">Offers</a></li>
-          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ============================================================
-       HERO / BANNER SECTION
-  ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg-pattern"></div>
-    <img src="images/background-img.jpeg" alt="Fashion Club Menswear Banner" class="hero-bg-img"
-      onerror="this.style.display='none'" />
+    <img src="images/background-img.jpeg" class="hero-bg-img" />
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
-      <p class="hero-tagline"><span class="tagline-line"></span>New Season 2026<span class="tagline-line"></span></p>
-      <h1 class="hero-title">
-        <span class="reveal-text"><span>Fashion Club</span></span>
-        <span class="reveal-text"><span class="accent-text">Menswear</span></span>
+      <p>New Season 2026</p>
+
+      <!-- UPDATED TITLE -->
+      <h1>
+        007 <br />
+        <span style="color: gold;">Menswear</span>
       </h1>
-      <p class="hero-brand-badge">U.S. POLO. &nbsp;·&nbsp; LACOSTE &nbsp;·&nbsp; BURBERRY</p>
-      <p class="hero-subtitle">Where refined taste meets bold style.</p>
-      <a href="#products" class="btn-primary" id="hero-cta">
-        <span>Explore Collection</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
-    </div>
-    <div class="hero-scroll-hint">
-      <span class="scroll-dot"></span>
+
+      <!-- UPDATED TAGLINE -->
+      <p>Dress Like an Agent.</p>
+
+      <a href="#products" class="btn-primary">Explore Collection</a>
     </div>
   </section>
 
-  <!-- ============================================================
-       MARQUEE STRIP
-  ============================================================ -->
-  <div class="marquee-strip" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Premium Menswear</span><span class="dot">✦</span>
-      <span>U.S. Polo</span><span class="dot">✦</span>
-      <span>Lacoste</span><span class="dot">✦</span>
-      <span>Burberry</span><span class="dot">✦</span>
-      <span>Nike</span><span class="dot">✦</span>
-      <span>Calvin Klein</span><span class="dot">✦</span>
-      <span>Fashion Club Karad</span><span class="dot">✦</span>
-      <span>Premium Menswear</span><span class="dot">✦</span>
-      <span>U.S. Polo</span><span class="dot">✦</span>
-      <span>Lacoste</span><span class="dot">✦</span>
-      <span>Burberry</span><span class="dot">✦</span>
-      <span>Nike</span><span class="dot">✦</span>
-      <span>Calvin Klein</span><span class="dot">✦</span>
-      <span>Fashion Club Karad</span><span class="dot">✦</span>
-    </div>
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <span>007 Menswear Karad ✦ U.S. Polo ✦ Lacoste ✦ Burberry ✦ Nike ✦ Calvin Klein ✦ 007 Menswear Karad</span>
   </div>
 
-  <!-- ============================================================
-       PRODUCT CATEGORIES SECTION
-  ============================================================ -->
-  <section class="section categories-section" id="products">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">What We Offer</p>
-        <h2 class="section-title">Shop by Category</h2>
-        <div class="section-divider"><span></span></div>
+  <!-- PRODUCTS -->
+  <section id="products">
+    <h2>Shop by Category</h2>
+
+    <div class="categories-grid">
+
+      <div class="category-card">
+        <img src="images/shirts/shirt1.jpeg" />
+        <h3>Shirts</h3>
       </div>
 
-      <!-- Category Grid -->
-      <div class="categories-grid" id="categories-grid">
-
-        <!-- Shirts -->
-        <article class="category-card" id="cat-shirts" data-category="shirts" tabindex="0" role="button"
-          aria-label="View Shirts">
-          <div class="card-img-wrap">
-            <img src="images/shirts/shirt1.jpeg" alt="Shirts" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Shirts</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Shirts</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- T-Shirts -->
-        <article class="category-card" id="cat-tshirts" data-category="tshirts" tabindex="0" role="button"
-          aria-label="View T-Shirts">
-          <div class="card-img-wrap">
-            <img src="images/t-shirts/tshit7.jpeg" alt="T-Shirts" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>T-Shirts</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">T-Shirts</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Pants -->
-        <article class="category-card" id="cat-pants" data-category="pants" tabindex="0" role="button"
-          aria-label="View Pants">
-          <div class="card-img-wrap">
-            <img src="images/pants/pants1.jpeg" alt="Pants" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Pants</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Pants</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Night Pants -->
-        <article class="category-card" id="cat-nightpants" data-category="nightpants" tabindex="0" role="button"
-          aria-label="View Night Pants">
-          <div class="card-img-wrap">
-            <img src="images/night_pants/nightpant1.jpeg" alt="Night Pants" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Night Pants</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Night Pants</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Shoes -->
-        <article class="category-card" id="cat-shoes" data-category="shoes" tabindex="0" role="button"
-          aria-label="View Shoes">
-          <div class="card-img-wrap">
-            <img src="images/shoes/shoes1.jpeg" alt="Shoes" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Shoes</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Shoes</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Slippers -->
-        <article class="category-card" id="cat-slippers" data-category="slippers" tabindex="0" role="button"
-          aria-label="View Slippers">
-          <div class="card-img-wrap">
-            <img src="images/slippers/slipper1.jpeg" alt="Slippers" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Slippers</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Slippers</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Sunglasses -->
-        <article class="category-card" id="cat-sunglasses" data-category="sunglasses" tabindex="0" role="button"
-          aria-label="View Sunglasses">
-          <div class="card-img-wrap">
-            <img src="images/sunglasses/sunglass5.jpg" alt="Sunglasses" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Sunglasses</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Sunglasses</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Undergarments -->
-        <article class="category-card" id="cat-undergarments" data-category="undergarments" tabindex="0" role="button"
-          aria-label="View Undergarments">
-          <div class="card-img-wrap">
-            <img src="images/undergarments/undergarment.jpg" alt="Undergarments" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Undergarments</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Undergarments</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Watches -->
-        <article class="category-card" id="cat-watches" data-category="watches" tabindex="0" role="button"
-          aria-label="View Watches">
-          <div class="card-img-wrap">
-            <img src="images/watches/watch1.jpeg" alt="Watches" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Watches</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Watches</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Hoodies -->
-        <article class="category-card" id="cat-hoodies" data-category="hoodies" tabindex="0" role="button"
-          aria-label="View Hoodies">
-          <div class="card-img-wrap">
-            <img src="images/hoodies/hoodies1.jpeg" alt="Hoodies" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Hoodies</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Hoodies</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
-        <!-- Loafers -->
-        <article class="category-card" id="cat-loafers" data-category="loafers" tabindex="0" role="button"
-          aria-label="View Loafers">
-          <div class="card-img-wrap">
-            <img src="images/loafers/loafer1.jpeg" alt="Loafers" class="card-img"
-              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
-            <div class="card-img-placeholder"><span>Loafers</span></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Loafers</h3>
-            <span class="card-arrow">→</span>
-          </div>
-        </article>
-
+      <div class="category-card">
+        <img src="images/t-shirts/tshit7.jpeg" />
+        <h3>T-Shirts</h3>
       </div>
-      <!-- /categories-grid -->
+
+      <div class="category-card">
+        <img src="images/pants/pants1.jpeg" />
+        <h3>Pants</h3>
+      </div>
+
+      <div class="category-card">
+        <img src="images/shoes/shoes1.jpeg" />
+        <h3>Shoes</h3>
+      </div>
+
+      <div class="category-card">
+        <img src="images/watches/watch1.jpeg" />
+        <h3>Watches</h3>
+      </div>
+
     </div>
   </section>
 
-  <!-- ============================================================
-       PRODUCT DETAILS SECTION (dynamically populated by JS)
-  ============================================================ -->
-  <section class="section product-details-section hidden" id="product-details">
-    <div class="container">
-      <div class="section-header">
-        <button class="btn-back" id="btn-back" aria-label="Back to categories">← Back to Categories</button>
-        <p class="section-label" id="details-label">Category</p>
-        <h2 class="section-title" id="details-title">Products</h2>
-        <div class="section-divider"><span></span></div>
-      </div>
-      <div class="products-grid" id="products-grid"></div>
-    </div>
+  <!-- OFFER -->
+  <section id="offers">
+    <h2>Flat 5% OFF</h2>
+    <p>on All Products – No Minimum Purchase Required!</p>
   </section>
 
-  <!-- ============================================================
-       OFFER SECTION
-  ============================================================ -->
-  <section class="offer-section" id="offers">
-    <div class="offer-inner container">
-      <div class="offer-ornament">✦</div>
-      <p class="offer-eyebrow">Exclusive Deal</p>
-      <h2 class="offer-headline">Flat <span class="offer-percent">5% OFF</span></h2>
-      <p class="offer-sub">on All Products – No Minimum Purchase Required!</p>
-      <div class="offer-ornament">✦</div>
-    </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Visit Us</h2>
+    <p>Krishna Naka, Karad</p>
+    <p>📞 +91 78759 25454</p>
   </section>
 
-  <!-- ============================================================
-       CONTACT SECTION
-  ============================================================ -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-
-      <div class="section-header">
-        <p class="section-label">Get in Touch</p>
-        <h2 class="section-title">Visit Us</h2>
-        <div class="section-divider"><span></span></div>
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- Phone -->
-        <div class="contact-card" id="contact-phone">
-          <div class="contact-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z" />
-            </svg>
-          </div>
-          <h3 class="contact-card-title">Call Us</h3>
-          <p class="contact-info">+91 78759 25454</p>
-        </div>
-
-        <!-- Address -->
-        <div class="contact-card" id="contact-address">
-          <div class="contact-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-          </div>
-          <h3 class="contact-card-title">Our Store</h3>
-          <p class="contact-info">Krishna Naka, Vakhan Road,<br />Karad, Satara,<br />Maharashtra</p>
-        </div>
-
-        <!-- Hours -->
-        <div class="contact-card" id="contact-hours">
-          <div class="contact-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-          </div>
-          <h3 class="contact-card-title">Store Hours</h3>
-          <p class="contact-info">Mon – Sun<br />10:00 AM – 10:00 PM</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footer">
-    <div class="footer-top-border"></div>
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo-mark">FC</span>
-        <span class="footer-logo-name">Fashion Club Menswear</span>
-      </div>
-      <p class="footer-copy">© 2026 Fashion Club Menswear. All rights reserved.</p>
-      <p class="footer-social">
-        Follow us on
-        <a href="https://instagram.com/fashion_club_meanswear_6070" target="_blank" rel="noopener">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-          </svg>
-          Instagram
-        </a>
-      </p>
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <!-- UPDATED FOOTER -->
+      <h3>007 Menswear</h3>
+      <p>© 2026 007 Menswear. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
